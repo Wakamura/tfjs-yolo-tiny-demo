@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@tensorflow/tfjs": "0.x",
+    "express": "^4.16.3",
     "tfjs-yolo-tiny": "^0.0.4"
   },
   "devDependencies": {
@@ -16,6 +17,6 @@
   },
   "scripts": {
     "build": "rm -rf ./dist && parcel build src/index.html --public-url='/tfjs-yolo-tiny-demo/'",
-    "serve": "parcel src/index.html"
+    "start": "parcel src/index.html && node index.js"
   }
 }
